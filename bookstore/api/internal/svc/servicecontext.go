@@ -16,7 +16,8 @@ type ServiceContext struct {
 
 func NewServiceContext(c config.Config) *ServiceContext {
 	return &ServiceContext{
-		Config:  c,
+		Config: c,
+		// TODO zrpc.MustNewClient(c.Add)根据z.Add配置构建Rpc客户端
 		Adder:   adder.NewAdder(zrpc.MustNewClient(c.Add)),
 		Checker: checker.NewChecker(zrpc.MustNewClient(c.Check)),
 	}

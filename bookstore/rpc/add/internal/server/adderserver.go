@@ -22,6 +22,7 @@ func NewAdderServer(svcCtx *svc.ServiceContext) *AdderServer {
 }
 
 func (s *AdderServer) Add(ctx context.Context, in *add.AddReq) (*add.AddResp, error) {
+	// TODO gRpc Add接口实现
 	l := logic.NewAddLogic(ctx, s.svcCtx)
 	return l.Add(in)
 }

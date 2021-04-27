@@ -25,6 +25,7 @@ func NewAddLogic(ctx context.Context, svcCtx *svc.ServiceContext) *AddLogic {
 }
 
 func (l *AddLogic) Add(in *add.AddReq) (*add.AddResp, error) {
+	// TODO 数据库操操作
 	_, err := l.svcCtx.Model.Insert(model.Book{
 		Book:  in.Book,
 		Price: in.Price,

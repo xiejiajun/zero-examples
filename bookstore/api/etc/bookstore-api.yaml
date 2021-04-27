@@ -1,6 +1,8 @@
 Name: bookstore-api
 Host: 0.0.0.0
 Port: 8888
+
+## 用于构建Add Rpc接口的rpc客户端的配置
 Add:
   Etcd:
     Hosts:

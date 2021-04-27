@@ -33,6 +33,8 @@ func NewAdder(cli zrpc.Client) Adder {
 }
 
 func (m *defaultAdder) Add(ctx context.Context, in *AddReq) (*AddResp, error) {
+	// TODO 构建gRpc接口调用客户端
 	client := add.NewAdderClient(m.cli.Conn())
+	// TODO 调用gRpc接口
 	return client.Add(ctx, in)
 }

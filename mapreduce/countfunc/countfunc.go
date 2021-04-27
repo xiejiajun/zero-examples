@@ -59,6 +59,7 @@ func mapper(filename interface{}, writer mr.Writer, cancel func(error)) {
 	}
 
 	var result int
+	// 统计单个go文件里面的函数
 	for line := range enumerateLines(filename.(string)) {
 		if strings.HasPrefix(strings.TrimSpace(line), "func") {
 			result++

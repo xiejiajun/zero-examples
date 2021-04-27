@@ -1,4 +1,5 @@
 Name: add.rpc
+### 注册到Etcd上的服务信息host:port
 ListenOn: 127.0.0.1:8080
 Etcd:
   Hosts:
