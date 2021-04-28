@@ -36,6 +36,7 @@ func (gs *GracefulServer) Grace(ctx context.Context, req *graceful.Request) (*gr
 	}, nil
 }
 
+// TODO 优雅返回响应？
 func main() {
 	flag.Parse()
 

@@ -6,6 +6,7 @@ import (
 	"github.com/tal-tech/go-zero/core/stringx"
 )
 
+// TODO 字符串替换工具测试
 func main() {
 	replacer := stringx.NewReplacer(map[string]string{
 		"日本":    "法国",

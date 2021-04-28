@@ -18,6 +18,7 @@ func main() {
 	for {
 		select {
 		case <-ticker.C:
+			// TODO 服务发现测试
 			fmt.Println("values:", sub.Values())
 		}
 	}

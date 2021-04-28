@@ -38,6 +38,7 @@ func handle(w http.ResponseWriter, r *http.Request) {
 	httpx.OkJson(w, result)
 }
 
+// TODO http server测试
 func main() {
 	flag.Parse()
 

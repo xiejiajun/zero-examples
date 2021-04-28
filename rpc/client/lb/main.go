@@ -14,6 +14,8 @@ import (
 
 var lb = flag.String("t", "direct", "the load balancer type")
 
+// TODO 负载均衡调用测试，direct方式需要配置多个gRpc Server endpoint
+//  etcd服务发现模式只需要指定etcd地址即可
 func main() {
 	flag.Parse()
 

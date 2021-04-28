@@ -15,6 +15,7 @@ func main() {
 	flag.Parse()
 
 	client := discov.NewPublisher([]string{"etcd.discovery:2379"}, "028F2C35852D", *value)
+	// TODO 服务注册测试
 	if err := client.KeepAlive(); err != nil {
 		log.Fatal(err)
 	}

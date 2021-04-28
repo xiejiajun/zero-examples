@@ -29,6 +29,7 @@ func NewGreetServer() *GreetServer {
 	}
 }
 
+// TODO gRpc普通接口服务端实现
 func (gs *GreetServer) Greet(ctx context.Context, req *unary.Request) (*unary.Response, error) {
 	fmt.Println("=>", req)
 

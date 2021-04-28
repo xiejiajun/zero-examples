@@ -18,6 +18,7 @@ type Roster struct {
 	DisplayName string        `bson:"displayName"`
 }
 
+// TODO MongoDB访问测试
 func main() {
 	model := mongo.MustNewModel("localhost:27017/blackboard", "roster")
 	for i := 0; i < 1000; i++ {

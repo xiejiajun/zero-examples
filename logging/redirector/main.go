@@ -7,6 +7,7 @@ import (
 	"github.com/tal-tech/go-zero/core/logx"
 )
 
+// TODO 日志框架测试
 func main() {
 	logx.MustSetup(logx.LogConf{
 		Mode: "console",

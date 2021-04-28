@@ -24,6 +24,7 @@ var (
 	threads = flag.Int("threads", runtime.NumCPU(), "the concurrent threads, default to cores")
 )
 
+// TODO 周期限流算法测试
 func main() {
 	flag.Parse()
 

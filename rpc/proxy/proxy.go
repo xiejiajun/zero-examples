@@ -30,6 +30,7 @@ func (s *GreetServer) Greet(ctx context.Context, req *unary.Request) (*unary.Res
 	return remote.Greet(ctx, req)
 }
 
+// TODO Rpc代理测试
 func main() {
 	flag.Parse()
 

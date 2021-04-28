@@ -19,6 +19,7 @@ const (
 	timeFormat       = "0102150405"
 )
 
+// TODO 根据心跳调用信号进行协程dump测试
 func init() {
 	go func() {
 		// https://golang.org/pkg/os/signal/#Notify

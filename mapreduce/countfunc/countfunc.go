@@ -96,6 +96,7 @@ func reducer(input <-chan interface{}, writer mr.Writer, cancel func(error)) {
 	writer.Write(result)
 }
 
+// TODO MR实现WordCount案例
 func main() {
 	if err := agent.Listen(agent.Options{}); err != nil {
 		log.Fatal(err)

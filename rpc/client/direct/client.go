@@ -13,6 +13,7 @@ import (
 
 const timeFormat = "15:04:05"
 
+// TODO gRpc服务发现方式调用测试
 func main() {
 	flag.Parse()
 

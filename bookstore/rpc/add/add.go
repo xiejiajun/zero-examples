@@ -20,6 +20,7 @@ import (
 
 var configFile = flag.String("f", "etc/add.yaml", "the config file")
 
+// TODO 多rpc接口案例
 func main() {
 	flag.Parse()
 

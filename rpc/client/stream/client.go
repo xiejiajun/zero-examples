@@ -16,6 +16,7 @@ const name = "kevin"
 
 var key = flag.String("key", "zrpc", "the key on etcd")
 
+// TODO gRpc Stream 接口调用测试
 func main() {
 	flag.Parse()
 

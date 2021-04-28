@@ -10,6 +10,7 @@ func foo() {
 	logx.WithDuration(time.Second).Error("world")
 }
 
+// TODO 日志测试
 func main() {
 	c := logx.LogConf{
 		Mode: "console",

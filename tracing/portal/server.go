@@ -47,6 +47,7 @@ func (gs *PortalServer) Portal(ctx context.Context, req *portal.PortalRequest) (
 	}
 }
 
+// TODO rpc服务
 func main() {
 	flag.Parse()
 

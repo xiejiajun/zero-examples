@@ -26,6 +26,7 @@ var (
 	threads = flag.Int("threads", runtime.NumCPU(), "the concurrent threads, default to cores")
 )
 
+// TODO 令牌桶限流算法测试
 func main() {
 	flag.Parse()
 

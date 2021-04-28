@@ -17,6 +17,7 @@ const numItems = 1000000
 
 var round = flag.Int("r", 3, "rounds to go")
 
+// TODO 事件轮算法测试
 func main() {
 	defer proc.StartProfile().Stop()
 

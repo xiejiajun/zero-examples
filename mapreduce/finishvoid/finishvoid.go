@@ -8,6 +8,7 @@ import (
 	"github.com/tal-tech/go-zero/core/timex"
 )
 
+// TODO MR FinishVoid测试
 func main() {
 	start := timex.Now()
 

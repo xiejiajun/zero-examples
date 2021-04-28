@@ -35,6 +35,7 @@ var (
 	orderRpc order
 )
 
+// TODO MR测试
 func main() {
 	start := timex.Now()
 	_, err := productDetail(123, 345)

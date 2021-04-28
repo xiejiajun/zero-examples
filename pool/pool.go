@@ -12,6 +12,7 @@ import (
 	"github.com/tal-tech/go-zero/core/syncx"
 )
 
+// TODO 资源池测试
 func main() {
 	var count int32
 	var consumed int32

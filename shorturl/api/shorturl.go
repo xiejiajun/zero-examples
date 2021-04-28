@@ -13,6 +13,7 @@ import (
 
 var configFile = flag.String("f", "etc/shorturl-api.yaml", "the config file")
 
+// TODO 单Rpc单rest服务案例
 func main() {
 	flag.Parse()
 

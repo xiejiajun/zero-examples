@@ -12,6 +12,7 @@ type User struct {
 	Name string
 }
 
+// TODO MR死锁测试
 func main() {
 	uids := []int{111, 222, 333}
 	res, err := mr.MapReduce(func(source chan<- interface{}) {

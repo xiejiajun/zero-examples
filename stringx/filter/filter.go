@@ -6,6 +6,7 @@ import (
 	"github.com/tal-tech/go-zero/core/stringx"
 )
 
+// TODO 字符串关键词过来工具测试
 func main() {
 	filter := stringx.NewTrie([]string{
 		"AV演员",

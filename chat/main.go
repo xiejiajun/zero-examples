@@ -4,7 +4,7 @@ import (
 	"flag"
 	"net/http"
 
-	"zero-examples/chat/internal"
+	"github.com/zeromicro/zero-examples/chat/internal"
 
 	"github.com/tal-tech/go-zero/core/logx"
 	"github.com/tal-tech/go-zero/core/service"
@@ -17,6 +17,7 @@ var (
 	cpu     = flag.Int64("cpu", 500, "cpu threshold")
 )
 
+// TODO websocket案例
 func main() {
 	flag.Parse()
 

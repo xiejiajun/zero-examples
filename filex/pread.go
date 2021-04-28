@@ -39,6 +39,7 @@ type (
 	}
 )
 
+// TODO 并发读取文件？
 func FastLoad(filename string) error {
 	if filename == "" {
 		return errors.New("no available dictionary")
@@ -84,6 +85,7 @@ func FastLoad(filename string) error {
 	}
 
 	bar := pb.New64(info.Size()).SetUnits(pb.U_BYTES).Start()
+	// TODO 流式API测试
 	fx.From(func(source chan<- interface{}) {
 		for _, each := range ranges {
 			source <- each

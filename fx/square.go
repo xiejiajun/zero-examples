@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	// TODO Stream Api测试
 	result, err := fx.From(func(source chan<- interface{}) {
 		for i := 0; i < 10; i++ {
 			source <- i

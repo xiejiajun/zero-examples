@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	// TODO 布隆过滤器使用案例
 	store := redis.NewRedis("localhost:6379", "node")
 	filter := bloom.New(store, "testbloom", 64)
 	filter.Add([]byte("kevin"))

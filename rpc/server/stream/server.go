@@ -38,6 +38,7 @@ func (gs StreamGreetServer) Greet(s stream.StreamGreeter_GreetServer) error {
 	}
 }
 
+// TODO gRpc Stream接口服务端
 func main() {
 	var c zrpc.RpcServerConf
 	conf.MustLoad("etc/config.json", &c)

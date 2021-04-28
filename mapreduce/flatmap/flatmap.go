@@ -16,6 +16,7 @@ var (
 	}
 )
 
+// TODO flatmap逻辑实现
 func main() {
 	var allFriends []string
 	for v := range mr.Map(func(source chan<- interface{}) {

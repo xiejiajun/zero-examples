@@ -13,6 +13,7 @@ import (
 
 var configFile = flag.String("f", "config.json", "the config file")
 
+// TODO grpc普通接口调用测试
 func main() {
 	flag.Parse()
 

@@ -15,6 +15,7 @@ const interval = time.Minute
 
 var traditional = flag.Bool("traditional", false, "enable traditional mode")
 
+// TODO 事件轮算法测试
 func main() {
 	flag.Parse()
 

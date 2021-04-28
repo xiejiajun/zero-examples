@@ -9,6 +9,7 @@ import (
 	"github.com/tal-tech/go-zero/core/syncx"
 )
 
+// TODO 高并发工具调用结果共享工具测试，类似于go原生的singleflight
 func main() {
 	const round = 5
 	var wg sync.WaitGroup
